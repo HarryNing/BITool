@@ -1,0 +1,153 @@
+﻿@{
+    ViewBag.Title = "Adhoc Query Tool";
+}
+
+<div class="form-group">
+    <textarea class="form-control" id="txtSQL" rows="8"></textarea>
+</div>
+<div class="form-group">
+    <button class="btn btn-primary" type="button" tabindex="0" id="btnExecute">Execute</button>
+    <button class="btn btn-primary disabled" type="button" tabindex="0" disabled="disabled" id="btnCancel">Cancel</button>
+    <span id="lblProgressReport" style="display: inline-block; line-height: 34px; float:right"></span>
+    <span id="lblMessage" style="display: inline-block; padding: 0px 20px; text-align: center; line-height: 34px; "></span>
+    <a id="lnkDownload" style="display:none;color:blue;">Download</a>
+</div>
+
+<div id="divGridContainer" style="display:none" class="form-group">
+    <h4>Sample Data:</h4>
+    <div style="overflow-x:auto">
+        <table id="tblGrid" class='table table-condensed'></table>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/Scripts/jquery.signalR-2.1.0.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script>
+        var rootUrl = '@Url.Content("~")';
+        (function () {
+            var cancelled = false;
+            var exceptioned = false;
+            var jobId = '';
+            var hubProxy = $.connection.progressHub;
+
+            $("#btnExecute").click(function () {
+                var sql = $("#txtSQL").val();
+                if ($.trim(sql) == "") {
+                    $("#lblMessage").html('Input SQL script');
+                    $("#lblMessage").addClass("error");
+                    return;
+                }
+                cancelled = false;
+                exceptioned = false;
+                SetDisplay(false, null, true);
+                jobId = generateJobId();
+                trackJobProgress(jobId, function () {
+                    $.ajax({
+                        url: rootUrl + 'Home/Query/',
+                        type: 'POST',
+                        data: { sqlScript: sql, jobId: jobId },
+                        success: function (data) {
+                            if (data.IsFailed) {
+                                SetDisplay(true, false, null);
+                                $("#lblMessage").html(data.Message);
+                                $("#lblMessage").addClass("error");
+                                return;
+                            }
+                            $("#lblMessage").html("Query started.");
+                        }
+                    })
+                });
+
+            });
+
+
+            function trackJobProgress(jobId, callback) {
+
+                hubProxy.client.exception = function (exceptionString) {
+                    SetDisplay(true, false, null);
+                    if (cancelled == false) {
+                        $("#lblMessage").html(exceptionString);
+                        $("#lblMessage").addClass("error");
+                    }
+                };
+
+                hubProxy.client.top5Returned = function (htmlString) {
+                    if (cancelled == false) {
+                        $("#divGridContainer").show();
+                        $("#tblGrid").html(htmlString);
+                    }
+                };
+
+                hubProxy.client.progressChanged = function (progress) {
+                    if (cancelled == false) {
+                        SetProgress(progress);
+                    }
+                };
+                hubProxy.client.queryCompleted = function () {
+                    SetDisplay(null, false, null);
+                    $("#lblMessage").text("Query completed, compressing...");
+                };
+
+                hubProxy.client.jobCompleted = function () {
+                    SetDisplay(true, null, null);
+                    if (cancelled == false) {
+                        $("#lblMessage").text("Zip file ready.  ");
+                        $("#lnkDownload").show().attr("href", rootUrl + "CSV/" + jobId + ".zip");
+                    }
+                    $.connection.hub.stop();
+                };
+
+                $.connection.hub.start().done(function () {
+                    SetDisplay(null, true, null);
+                    hubProxy.server.trackJob(jobId);
+                    callback();
+                });
+            }
+
+            $("#btnCancel").click(function () {
+                cancelled = true;
+                SetDisplay(null, false, true);
+                hubProxy.server.cancelJob(jobId);
+            });
+
+            function SetProgress(progress) {
+                $("#lblProgressReport").show();
+                $("#lblProgressReport").text("Number of rows: " + progress + " ");
+            }
+
+            function generateJobId() {
+                var t = new Date();
+                var jobId = '@User.Identity.Name.Replace("\\","_")' + '_' + t.getFullYear() + '-' + (t.getMonth() + 1) + '-' + t.getDate() + '_'
+                    + t.getHours() + '_' + t.getMinutes() + '_' + t.getSeconds() + '_' + t.getMilliseconds();
+                return jobId;
+            }
+
+            function SetDisplay(execute, cancel, reset) {
+                if (execute != null) {
+                    if (execute) {
+                        $("#btnExecute").attr("disabled", false).removeClass("disabled");
+                    }
+                    else {
+                        $("#btnExecute").attr("disabled", true).addClass("disabled");
+                    }
+                }
+                if (cancel != null) {
+                    if (cancel) {
+                        $("#btnCancel").attr("disabled", false).removeClass("disabled");
+                    }
+                    else {
+                        $("#btnCancel").attr("disabled", true).addClass("disabled");
+                    }
+                }
+                if (reset) {
+                    $("#lblProgressReport").hide();
+                    $("#lnkDownload").hide();
+                    $("#lblMessage").html('');
+                    $("#lblMessage").removeClass("error");
+                    $("#divGridContainer").hide();
+                }
+            }
+        })();
+    </script>
+}

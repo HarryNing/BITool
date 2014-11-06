@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdhocQuery", "AdhocQuery\AdhocQuery.csproj", "{E266B5AC-FFA1-4BFF-88A5-6D2FD4427978}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomizeMenu", "CustomizeMenu\CustomizeMenu.csproj", "{588E61F6-FB34-45C1-AE53-2E3F2072F513}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharepointTool", "SharepointTool\SharepointTool.csproj", "{66B54CBC-9133-4C3E-85D1-8603A631BEFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSASTool", "SSASTool\SSASTool.csproj", "{4853C349-10FD-4CF8-B451-4367136BD489}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VerticaTool", "VerticaTool", "{A174FD73-131E-4486-838A-236A5B881D01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BITool", "VerticaTool\BITool\BITool.csproj", "{A10924E6-BBBC-4761-97B5-ED20C2A69472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Batch", "VerticaTool\BIToolBatch\Batch.csproj", "{64D942D7-A0EB-43D9-82F9-F114C8E21AAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIToolUtility", "VerticaTool\BIToolUtility\BIToolUtility.csproj", "{20F7E6C1-E2D2-4529-B6FF-D5E506EDA4D3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E266B5AC-FFA1-4BFF-88A5-6D2FD4427978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E266B5AC-FFA1-4BFF-88A5-6D2FD4427978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E266B5AC-FFA1-4BFF-88A5-6D2FD4427978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E266B5AC-FFA1-4BFF-88A5-6D2FD4427978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{588E61F6-FB34-45C1-AE53-2E3F2072F513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588E61F6-FB34-45C1-AE53-2E3F2072F513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588E61F6-FB34-45C1-AE53-2E3F2072F513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588E61F6-FB34-45C1-AE53-2E3F2072F513}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66B54CBC-9133-4C3E-85D1-8603A631BEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66B54CBC-9133-4C3E-85D1-8603A631BEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66B54CBC-9133-4C3E-85D1-8603A631BEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66B54CBC-9133-4C3E-85D1-8603A631BEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4853C349-10FD-4CF8-B451-4367136BD489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4853C349-10FD-4CF8-B451-4367136BD489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4853C349-10FD-4CF8-B451-4367136BD489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4853C349-10FD-4CF8-B451-4367136BD489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A10924E6-BBBC-4761-97B5-ED20C2A69472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A10924E6-BBBC-4761-97B5-ED20C2A69472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A10924E6-BBBC-4761-97B5-ED20C2A69472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A10924E6-BBBC-4761-97B5-ED20C2A69472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64D942D7-A0EB-43D9-82F9-F114C8E21AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D942D7-A0EB-43D9-82F9-F114C8E21AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D942D7-A0EB-43D9-82F9-F114C8E21AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D942D7-A0EB-43D9-82F9-F114C8E21AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F7E6C1-E2D2-4529-B6FF-D5E506EDA4D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F7E6C1-E2D2-4529-B6FF-D5E506EDA4D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F7E6C1-E2D2-4529-B6FF-D5E506EDA4D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F7E6C1-E2D2-4529-B6FF-D5E506EDA4D3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A10924E6-BBBC-4761-97B5-ED20C2A69472} = {A174FD73-131E-4486-838A-236A5B881D01}
+		{64D942D7-A0EB-43D9-82F9-F114C8E21AAA} = {A174FD73-131E-4486-838A-236A5B881D01}
+		{20F7E6C1-E2D2-4529-B6FF-D5E506EDA4D3} = {A174FD73-131E-4486-838A-236A5B881D01}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,58 @@
+﻿@model AdhocQuery.Models.SPPermission
+
+@{
+    ViewBag.Title = "Permission";
+}
+
+<h2>Permission</h2>
+
+@using (Html.BeginForm("Index", "SP"))
+{
+    <table id="mainTable">
+        <tr>
+            <th>
+                &nbsp;
+            </th>
+            @foreach (var group in Model.Groups)
+            {
+                <th>
+                    @Html.Encode(group.Name)
+                </th>
+            }
+        </tr>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td class="reportNameList">
+                    @Html.Encode(item.Name)
+                </td>
+                @foreach (var group in Model.Groups)
+                {
+                    string name = ((long)item.ID << 32 | group.ID).ToString();
+                    string id = "checkbox" + name;
+
+                    <td>
+                        <div class="custom-checkbox">
+                            @Html.CheckBox(name, Model[item.ID, group.ID], new { id = id })
+                            <label for="<%= id %>">&nbsp;</label>
+                        </div>
+                    </td>
+                }
+            </tr>
+        }
+        <tr>
+            <th>
+                &nbsp;
+            </th>
+            @foreach (var group in Model.Groups)
+            {
+                <th>
+                    @Html.Encode(group.Name)
+                </th>
+            }
+        </tr>
+    </table>
+
+    <p class="message">@ViewData["Message"]</p>
+    <input type="submit" class="submit" value="Save" />
+}

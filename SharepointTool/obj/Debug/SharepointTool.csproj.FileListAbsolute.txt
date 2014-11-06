@@ -1,0 +1,7 @@
+C:\Git\SharepointTool\SharepointTool\bin\Debug\SharepointTool.exe.config
+C:\Git\SharepointTool\SharepointTool\bin\Debug\SharepointTool.exe
+C:\Git\SharepointTool\SharepointTool\bin\Debug\SharepointTool.pdb
+C:\Git\SharepointTool\SharepointTool\obj\Debug\SharepointTool.exe
+C:\Git\SharepointTool\SharepointTool\obj\Debug\SharepointTool.pdb
+C:\Git\SharepointTool\SharepointTool\bin\Debug\datasource.xlsx
+C:\Git\SharepointTool\SharepointTool\obj\Debug\SharepointTool.csprojResolveAssemblyReference.cache

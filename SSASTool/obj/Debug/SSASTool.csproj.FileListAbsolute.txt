@@ -1,0 +1,6 @@
+C:\Git\SharepointTool\SSASTool\bin\Debug\SSASTool.exe.config
+C:\Git\SharepointTool\SSASTool\bin\Debug\SSASTool.exe
+C:\Git\SharepointTool\SSASTool\bin\Debug\SSASTool.pdb
+C:\Git\SharepointTool\SSASTool\obj\Debug\SSASTool.csprojResolveAssemblyReference.cache
+C:\Git\SharepointTool\SSASTool\obj\Debug\SSASTool.exe
+C:\Git\SharepointTool\SSASTool\obj\Debug\SSASTool.pdb

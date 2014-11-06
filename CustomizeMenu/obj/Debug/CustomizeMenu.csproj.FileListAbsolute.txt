@@ -1,0 +1,7 @@
+C:\Git\SharepointTool\CustomizeMenu\bin\Debug\CustomizeMenu.exe.config
+C:\Git\SharepointTool\CustomizeMenu\bin\Debug\CustomizeMenu.exe
+C:\Git\SharepointTool\CustomizeMenu\bin\Debug\CustomizeMenu.pdb
+C:\Git\SharepointTool\CustomizeMenu\bin\Debug\Microsoft.SharePoint.dll
+C:\Git\SharepointTool\CustomizeMenu\obj\Debug\CustomizeMenu.csprojResolveAssemblyReference.cache
+C:\Git\SharepointTool\CustomizeMenu\obj\Debug\CustomizeMenu.exe
+C:\Git\SharepointTool\CustomizeMenu\obj\Debug\CustomizeMenu.pdb
