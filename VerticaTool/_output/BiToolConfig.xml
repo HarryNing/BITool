@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<BIToolConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceConnections>
+    <Connection>
+      <Name>CNS-E1DW</Name>
+      <Host>CNS-E1DW</Host>
+      <Database>OdinPlus</Database>
+      <Username>sa</Username>
+      <Password>Bi!@#$%</Password>
+      <ConnectionType>MSSQLSERVER</ConnectionType>
+    </Connection>
+  </SourceConnections>
+  <TargetConnections>
+    <Connection>
+      <Name>Vertica</Name>
+      <Host>10.128.44.129</Host>
+      <Database>VMart</Database>
+      <Username>dbadmin</Username>
+      <Password>password</Password>
+      <ConnectionType>Vertica</ConnectionType>
+    </Connection>
+  </TargetConnections>
+  <ThreadCount>100</ThreadCount>
+  <Batches>
+    <string>Lookup</string>
+    <string>Attendance</string>
+    <string>Balance</string>
+    <string>CustomerDim</string>
+    <string>Finance</string>
+    <string>Marketing</string>
+    <string>Datelink</string>
+    <string>Lookup1</string>
+    <string>Lookup2</string>
+    <string>Lookup3</string>
+  </Batches>
+</BIToolConfig>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BITool", "BITool\BITool.csproj", "{A10924E6-BBBC-4761-97B5-ED20C2A69472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BIToolUtility", "BIToolUtility\BIToolUtility.csproj", "{20F7E6C1-E2D2-4529-B6FF-D5E506EDA4D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Batch", "BIToolBatch\Batch.csproj", "{64D942D7-A0EB-43D9-82F9-F114C8E21AAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A10924E6-BBBC-4761-97B5-ED20C2A69472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A10924E6-BBBC-4761-97B5-ED20C2A69472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A10924E6-BBBC-4761-97B5-ED20C2A69472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A10924E6-BBBC-4761-97B5-ED20C2A69472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F7E6C1-E2D2-4529-B6FF-D5E506EDA4D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F7E6C1-E2D2-4529-B6FF-D5E506EDA4D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F7E6C1-E2D2-4529-B6FF-D5E506EDA4D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F7E6C1-E2D2-4529-B6FF-D5E506EDA4D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64D942D7-A0EB-43D9-82F9-F114C8E21AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D942D7-A0EB-43D9-82F9-F114C8E21AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D942D7-A0EB-43D9-82F9-F114C8E21AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D942D7-A0EB-43D9-82F9-F114C8E21AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+D:\Git\bitool\_output\log4net.config
+D:\Git\bitool\_output\BIToolUtility.dll
+D:\Git\bitool\_output\BIToolUtility.pdb
+D:\Git\bitool\BIToolUtility\obj\Debug\BIToolUtility.dll
+D:\Git\bitool\BIToolUtility\obj\Debug\BIToolUtility.pdb

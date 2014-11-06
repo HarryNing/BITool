@@ -1,0 +1,14 @@
+D:\Git\bitool\BITool\bin\Release\BITool.exe.config
+D:\Git\bitool\Release\BITool.exe.config
+D:\Git\bitool\Release\log4net.config
+D:\Git\bitool\Release\BITool.exe
+D:\Git\bitool\Release\BITool.pdb
+D:\Git\bitool\BITool\obj\Release\BITool.csprojResolveAssemblyReference.cache
+D:\Git\bitool\BITool\obj\Release\BITool.BatchSetting.resources
+D:\Git\bitool\BITool\obj\Release\BITool.MainForm.resources
+D:\Git\bitool\BITool\obj\Release\BITool.DbConnectionSetting.resources
+D:\Git\bitool\BITool\obj\Release\BITool.Properties.Resources.resources
+D:\Git\bitool\BITool\obj\Release\BITool.SmtpSettings.resources
+D:\Git\bitool\BITool\obj\Release\BITool.csproj.GenerateResource.Cache
+D:\Git\bitool\BITool\obj\Release\BITool.exe
+D:\Git\bitool\BITool\obj\Release\BITool.pdb

@@ -1,0 +1,7 @@
+D:\Git\bitool\Release\log4net.config
+D:\Git\bitool\Release\Batch.exe.config
+D:\Git\bitool\Release\Batch.exe
+D:\Git\bitool\Release\Batch.pdb
+D:\Git\bitool\BIToolBatch\obj\Release\Batch.csprojResolveAssemblyReference.cache
+D:\Git\bitool\BIToolBatch\obj\Release\Batch.exe
+D:\Git\bitool\BIToolBatch\obj\Release\Batch.pdb

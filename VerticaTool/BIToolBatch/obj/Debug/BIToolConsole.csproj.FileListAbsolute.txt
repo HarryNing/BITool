@@ -1,0 +1,6 @@
+D:\Git\bitool\_output\BIToolConsole.exe.config
+D:\Git\bitool\_output\BIToolConsole.exe
+D:\Git\bitool\_output\BIToolConsole.pdb
+D:\Git\bitool\BIToolConsole\obj\Debug\BIToolConsole.csprojResolveAssemblyReference.cache
+D:\Git\bitool\BIToolConsole\obj\Debug\BIToolConsole.exe
+D:\Git\bitool\BIToolConsole\obj\Debug\BIToolConsole.pdb

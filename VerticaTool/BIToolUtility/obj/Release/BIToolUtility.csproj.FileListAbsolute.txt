@@ -1,0 +1,7 @@
+D:\Git\bitool\BIToolUtility\bin\Release\log4net.config
+D:\Git\bitool\BIToolUtility\bin\Release\BIToolUtility.dll
+D:\Git\bitool\BIToolUtility\bin\Release\BIToolUtility.pdb
+D:\Git\bitool\BIToolUtility\bin\Release\log4net.dll
+D:\Git\bitool\BIToolUtility\obj\Release\BIToolUtility.dll
+D:\Git\bitool\BIToolUtility\obj\Release\BIToolUtility.pdb
+D:\Git\bitool\BIToolUtility\obj\Release\BIToolUtility.csprojResolveAssemblyReference.cache
